@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Scoreboard</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --turf:#122318; --cream:#F4F1E6; --amber:#E8A63D; --ink:#14181A; --sage:#8FA98F;
+    --line:rgba(244,241,230,0.18);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--turf);color:var(--cream);font-family:'Inter',sans-serif;}
+  .app{max-width:720px;margin:0 auto;padding:28px 20px 80px;}
+  .topline{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:28px;}
+  .brand{font-size:20px;font-weight:600;}
+  .brand span{color:var(--amber);}
+  a{color:var(--amber);}
+  .back{font-size:13px;color:var(--sage);text-decoration:none;}
+  .paper{background:var(--cream);color:var(--ink);padding:32px 34px;}
+  h1{font-family:'Fraunces',serif;font-size:26px;margin:0 0 6px;}
+  .updated{font-size:12px;color:#777;margin-bottom:26px;}
+  h2{font-family:'Fraunces',serif;font-size:17px;margin:26px 0 8px;}
+  p,li{font-size:14.5px;line-height:1.6;color:#2a2a28;}
+  ul{padding-left:20px;}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="topline">
+    <div class="brand">SCOREBOARD <span>·</span> live cricket scorer</div>
+    <a class="back" href="index.html">Back to app</a>
+  </div>
+  <div class="paper">
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated: 15 September 2026</div>
+
+    <p>This is a free, community scoring tool for cricket matches. It is built to work with the least amount of personal data possible — there are no accounts, no sign-up forms, and nothing to identify you by name or email to use it.</p>
+
+    <h2>What is stored</h2>
+    <ul>
+      <li>Whatever you type into the setup screen — team names, player names, venue, and match details — since these are needed to run the scoreboard.</li>
+      <li>Ball-by-ball scoring data as the match is logged.</li>
+      <li>An anonymous device identifier, created automatically by Firebase Authentication when you connect. This identifier is a random string tied to your browser session, not to your real identity.</li>
+      <li>A one-way cryptographic hash of the scorer password you set for a match, used only to confirm you're re-entering the same password. The original password itself is never stored or transmitted anywhere.</li>
+    </ul>
+
+    <h2>What is not collected</h2>
+    <ul>
+      <li>No cookies used for tracking or advertising.</li>
+      <li>No analytics or third-party trackers.</li>
+      <li>No advertising of any kind.</li>
+      <li>No email address, phone number, or payment information is ever requested.</li>
+    </ul>
+
+    <h2>Where data lives</h2>
+    <p>Match data is stored in Google Firebase Realtime Database, a third-party service operated by Google. Firebase's own privacy terms govern how Google handles the underlying infrastructure. Anyone with a match's code can read that match's live data — that's what makes the "viewer" feature work — but only the device that created a match, using its own password, can change it.</p>
+
+    <h2>How long data is kept</h2>
+    <p>Match data persists in the database until it is manually removed. There is no automatic deletion after a match ends.</p>
+
+    <h2>Your choices</h2>
+    <p>This tool's code is open — anyone can host their own copy connected to their own Firebase project, which keeps that copy's match data entirely separate from any other deployment.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy can be sent to the site owner at the contact details listed on the main page.</p>
+  </div>
+</div>
+</body>
+</html>
